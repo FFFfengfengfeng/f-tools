@@ -1,0 +1,58 @@
+/**
+ * ------------------------------------------
+ * grid for ui 布局
+ * @version  1.0
+ * @author   henry
+ * ------------------------------------------
+ */
+
+//** .g-grid 基础样式,其他布局都根据.g-grid继承
+.g-grid{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .f-tc;
+}
+
+//** .g-grid-item占一整行
+.g-grid-1{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 100%;
+    }
+}
+//** .g-grid-item占两等分
+.g-grid-2{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 50%;
+    }
+}
+//** .g-grid-item占两等分
+.g-grid-3{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 33.33%;
+    }
+}
+//** .g-grid-item占两等分
+.g-grid-4{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 25%;
+    }
+}
+//** .g-grid-item占两等分
+.g-grid-5{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 20%;
+    }
+}
+//** .g-grid-item占两等分
+.g-grid-6{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 16.66%;
+    }
+}
