@@ -188,7 +188,7 @@ html {
 body {
   font-family: "微软雅黑";
   font-size: 0.24rem;
-  color: #8c8c8c;
+  color: #b3b3b3;
 }
 /**
  * ------------------------------------------
@@ -222,6 +222,14 @@ body {
       flex-wrap: wrap;
   text-align: center;
 }
+.g-grid .g-grid-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
 .g-grid-1 .g-grid-item {
   width: 100%;
 }
@@ -239,4 +247,58 @@ body {
 }
 .g-grid-6 .g-grid-item {
   width: 16.66%;
+}
+.g-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.g-column,
+.g-column-1,
+.g-column-2,
+.g-column-3,
+.g-column-4,
+.g-column-5,
+.g-column-6,
+.g-column-7,
+.g-column-8,
+.g-column-9,
+.g-column-10 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+.g-column-1 {
+  width: 10%;
+}
+.g-column-2 {
+  width: 20%;
+}
+.g-column-3 {
+  width: 30%;
+}
+.g-column-4 {
+  width: 40%;
+}
+.g-column-5 {
+  width: 50%;
+}
+.g-column-6 {
+  width: 60%;
+}
+.g-column-7 {
+  width: 70%;
+}
+.g-column-8 {
+  width: 80%;
+}
+.g-column-9 {
+  width: 90%;
+}
+.g-column-10 {
+  width: 100%;
 }

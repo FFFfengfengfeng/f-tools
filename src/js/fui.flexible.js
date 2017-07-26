@@ -11,12 +11,11 @@
     //设计文档宽度
     var designWidth = 750;
     
-    //文档宽度
-    var deviceWidth = doc.documentElement.clientWidth;
-    
-    //html元素
     function recalc() {
+        //html元素
         var _html = doc.documentElement;
+        //文档宽度
+        var deviceWidth = doc.documentElement.clientWidth;
         
         _html.style.fontSize = deviceWidth / (designWidth / 100) + 'px';
     }
