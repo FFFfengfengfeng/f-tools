@@ -1,0 +1,123 @@
+/**
+ * ------------------------------------------
+ * grid for ui 布局
+ * @version  1.0
+ * @author   henry
+ * ------------------------------------------
+ */
+
+//网格布局-------------------------------------
+//** .g-grid 网格布局
+.g-grid{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    .f-tc;
+    .g-grid-item{
+        box-sizing: @box-sizing-border;
+        background-color: @background-white;
+        border: @border-solid-base;
+        border-radius: @border-radius-base;
+        padding: @padding-base;
+    }
+}
+
+//** .g-grid-item占一整行
+.g-grid-1{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 100%;
+    }
+}
+//** .g-grid-item等分两列
+.g-grid-2{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 50%;
+    }
+}
+//** .g-grid-item等分散列
+.g-grid-3{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 33.33%;
+    }
+}
+//** .g-grid-item等分四列
+.g-grid-4{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 25%;
+    }
+}
+//** .g-grid-item等分五列
+.g-grid-5{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 20%;
+    }
+}
+//** .g-grid-item等分六列
+.g-grid-6{
+    &:extend(.g-grid);
+    .g-grid-item{
+        width: 16.66%;
+    }
+}
+//网格布局-------------------------------------
+
+
+//包装多行(row)--------------------------------
+//** .g-row 行 .g-column-x 列
+.g-row{
+    display: flex;
+    width: 100%;
+}
+.g-column{
+    box-sizing: @box-sizing-border;
+    background-color: @background-white;
+    border: @border-solid-base;
+    border-radius: @border-radius-base;
+    padding: @padding-base;
+}
+.g-column-1{
+    &:extend(.g-column);
+    width: 10%;
+}
+.g-column-2{
+    &:extend(.g-column);
+    width: 20%;
+}
+.g-column-3{
+    &:extend(.g-column);
+    width: 30%;
+}
+.g-column-4{
+    &:extend(.g-column);
+    width: 40%;
+}
+.g-column-5{
+    &:extend(.g-column);
+    width: 50%;
+}
+.g-column-6{
+    &:extend(.g-column);
+    width: 60%;
+}
+.g-column-7{
+    &:extend(.g-column);
+    width: 70%;
+}
+.g-column-8{
+    &:extend(.g-column);
+    width: 80%;
+}
+.g-column-9{
+    &:extend(.g-column);
+    width: 90%;
+}
+.g-column-10{
+    &:extend(.g-column);
+    width: 100%;
+}
+//包装多行(row)--------------------------------
