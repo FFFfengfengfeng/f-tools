@@ -1,7 +1,6 @@
 {
   "name": "fui",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +26,6 @@
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0"
-  }
+  },
+  "description": ""
 }
